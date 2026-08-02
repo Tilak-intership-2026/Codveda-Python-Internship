@@ -1,0 +1,2 @@
+echo "secret.key" > .gitignore
+echo "*.enc" >> .gitignore
