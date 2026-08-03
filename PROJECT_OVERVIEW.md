@@ -50,6 +50,6 @@ A special thanks to the mentors and the support team for their guidance througho
 .
  Contact
 For any queries regarding these projects, feel free to reach out:
-LinkedIn: [Your LinkedIn Profile Link]
-Email: [Your Email Address]
+LinkedIn: https://www.linkedin.com/in/tilak-kumar-security/
+Email: tilakkumar4956@gmail.com
 Website: www.codveda.com
