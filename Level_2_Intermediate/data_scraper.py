@@ -28,7 +28,7 @@ def scrape_quotes():
             quotes.append({'Quote': text, 'Author': author})
 
         if not quotes:
-            print("⚠️ No quotes found. The website structure might have changed.")
+            print(" No quotes found. The website structure might have changed.")
             return
 
         # 4. Save data to CSV
@@ -41,13 +41,13 @@ def scrape_quotes():
             for quote in quotes:
                 writer.writerow(quote)
 
-        print(f"✅ Successfully scraped {len(quotes)} quotes!")
-        print(f"📂 Data saved to '{filename}'")
+        print(f" Successfully scraped {len(quotes)} quotes!")
+        print(f" Data saved to '{filename}'")
 
     except requests.exceptions.ConnectionError:
-        print("❌ Error: Could not connect to the website.")
+        print(" Error: Could not connect to the website.")
     except Exception as e:
-        print(f"❌ An error occurred: {e}")
+        print(f" An error occurred: {e}")
 
 
 if __name__ == "__main__":
