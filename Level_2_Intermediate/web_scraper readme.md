@@ -1,4 +1,4 @@
-# 🕷️ Web Data Scraper
+#  Web Data Scraper
 
 > **Codveda Technology Python Development Internship**
 > **Level 2 (Intermediate) – Project 2**
@@ -7,7 +7,7 @@ A Python-based web scraping application that extracts quotes and their correspon
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 The **Web Data Scraper** is designed to automate the process of collecting publicly available information from web pages. Instead of manually copying data, the application sends an HTTP request to the target website, parses the returned HTML document, extracts the required elements, and saves the results into a CSV file for future analysis.
 
@@ -35,7 +35,7 @@ This project fulfills the following internship learning objectives:
 
 ---
 
-# ✨ Features
+#  Features
 
 * Automated web data extraction
 * HTML DOM parsing and navigation
@@ -49,7 +49,7 @@ This project fulfills the following internship learning objectives:
 
 ---
 
-# 🏗️ Project Workflow
+#  Project Workflow
 
 The application follows a structured four-stage workflow:
 
@@ -83,7 +83,7 @@ End
 
 ---
 
-# ⚙️ Working Mechanism
+#  Working Mechanism
 
 ## Step 1 — HTTP Request
 
@@ -141,15 +141,15 @@ Features of the output file:
 
 ---
 
-# 🛠️ Technology Stack
+#  Technology Stack
 
-## 🐍 Python 3.x
+##  Python 3.x
 
 Python provides an extensive ecosystem for automation, networking, and data processing, making it the preferred language for web scraping applications.
 
 ---
 
-## 📦 Requests
+##  Requests
 
 The **Requests** library simplifies HTTP communication.
 
@@ -164,7 +164,7 @@ The **Requests** library simplifies HTTP communication.
 
 ---
 
-## 🥣 BeautifulSoup4 (bs4)
+##  BeautifulSoup4 (bs4)
 
 BeautifulSoup is a powerful HTML/XML parser that enables efficient DOM traversal and data extraction.
 
@@ -178,7 +178,7 @@ BeautifulSoup is a powerful HTML/XML parser that enables efficient DOM traversal
 
 ---
 
-## 📄 CSV Module
+##  CSV Module
 
 Python's built-in **csv** module provides an efficient method for storing structured data.
 
@@ -192,7 +192,7 @@ Python's built-in **csv** module provides an efficient method for storing struct
 
 ---
 
-# 🧩 Data Extraction Pipeline
+#  Data Extraction Pipeline
 
 ```text
 Website
@@ -225,7 +225,7 @@ Finished
 
 ---
 
-# 📂 Output Format
+#  Output Format
 
 Example CSV structure:
 
@@ -236,7 +236,7 @@ Example CSV structure:
 
 ---
 
-# 🛡️ Error Handling
+#  Error Handling
 
 The application includes multiple layers of exception handling to ensure reliable execution.
 
@@ -253,7 +253,7 @@ The program provides meaningful error messages instead of terminating unexpected
 
 ---
 
-# 📈 Learning Outcomes
+#  Learning Outcomes
 
 This project demonstrates practical knowledge of:
 
@@ -269,7 +269,7 @@ This project demonstrates practical knowledge of:
 
 ---
 
-# 🚀 Future Enhancements
+#  Future Enhancements
 
 Potential improvements include:
 
@@ -286,7 +286,7 @@ Potential improvements include:
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```text
 Web-Data-Scraper/
@@ -299,7 +299,7 @@ Web-Data-Scraper/
 
 ---
 
-# 👨‍💻Developer
+# Developer
 
 **Tilak Kumar**
 
@@ -320,3 +320,6 @@ Python Developer | Cyber Security Enthusiast | AI & Automation Learner
 # License
 
 This project is developed for educational purposes as part of the **Codveda Technology Python Development Internship** and demonstrates practical implementation of web scraping using Python.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
