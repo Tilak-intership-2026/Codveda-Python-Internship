@@ -1,3 +1,9 @@
+"""
+N-Queens Solver using Backtracking
+Author: Tilak Kumar
+Description: Places N queens on an NxN board such that no two queens threaten each other.
+Algorithm: Recursive Backtracking with constraint checking (Row, Column, Diagonal).
+"""
 def is_safe(board, row, col, n):
     """Check if a queen can be placed at board[row][col]"""
 
@@ -44,7 +50,7 @@ def solve_n_queens(n):
         print("Solution does not exist")
         return False
 
-    print(f"✅ Solution for {n}-Queens Problem:")
+    print(f" Solution for {n}-Queens Problem:")
     for row in board:
         print(" ".join("Q" if x == 1 else "." for x in row))
     return True
@@ -55,11 +61,11 @@ def main():
     try:
         n = int(input("Enter the number of Queens (N): "))
         if n < 4:
-            print("⚠️ For N < 4, no solution exists or it's trivial.")
+            print(" For N < 4, no solution exists or it's trivial.")
         else:
             solve_n_queens(n)
     except ValueError:
-        print("❌ Invalid input! Please enter an integer.")
+        print(" Invalid input! Please enter an integer.")
 
 
 if __name__ == "__main__":
