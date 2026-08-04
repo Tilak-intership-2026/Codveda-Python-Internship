@@ -60,3 +60,6 @@ Reads the encrypted file.
 Attempts to reverse the transformation using the same key.
 Validates data integrity (HMAC check) before writing the restored file.
 User Interface (main): A CLI-based controller that manages user input, validates file paths using the os module, and routes actions to the appropriate engine.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
