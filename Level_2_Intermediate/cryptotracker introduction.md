@@ -24,10 +24,10 @@ Although this project utilizes only the **GET** method, understanding all major 
 
 | HTTP Method     | CRUD Operation | Purpose                                                                          | Usage in This Project                |
 | --------------- | -------------- | -------------------------------------------------------------------------------- | ------------------------------------ |
-| **GET**         | Read           | Retrieves data from the server without modifying resources. Safe and idempotent. | ✅ Fetches live cryptocurrency prices |
-| **POST**        | Create         | Creates a new resource on the server.                                            | ❌ Not required                       |
-| **PUT / PATCH** | Update         | Updates existing resources.                                                      | ❌ Not required                       |
-| **DELETE**      | Delete         | Removes resources from the server.                                               | ❌ Not required                       |
+| **GET**         | Read           | Retrieves data from the server without modifying resources. Safe and idempotent. |  Fetches live cryptocurrency prices |
+| **POST**        | Create         | Creates a new resource on the server.                                            |  Not required                       |
+| **PUT / PATCH** | Update         | Updates existing resources.                                                      |  Not required                       |
+| **DELETE**      | Delete         | Removes resources from the server.                                               |  Not required                       |
 
 **Note:** While this application focuses on data retrieval using the **GET** method, the remaining HTTP methods form the foundation of full-stack applications such as task managers, inventory systems, and web-based CRUD platforms.
 
@@ -230,10 +230,10 @@ REST APIs are commonly designed around the **CRUD (Create, Read, Update, Delete)
 
 | CRUD Operation | HTTP Method     | Purpose                                                                                                            | Usage in This Project                                              |
 | -------------- | --------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| **Create**     | **POST**        | Creates a new resource on the server by sending data in the request body.                                          | ❌ Not Used                                                         |
-| **Read**       | **GET**         | Retrieves existing data from the server without modifying any resources.                                           | ✅ Used to fetch live cryptocurrency prices from the CoinGecko API. |
-| **Update**     | **PUT / PATCH** | Updates an existing resource. **PUT** replaces the entire resource, while **PATCH** modifies only specific fields. | ❌ Not Used                                                         |
-| **Delete**     | **DELETE**      | Removes an existing resource from the server permanently.                                                          | ❌ Not Used                                                         |
+| **Create**     | **POST**        | Creates a new resource on the server by sending data in the request body.                                          |  Not Used                                                         |
+| **Read**       | **GET**         | Retrieves existing data from the server without modifying any resources.                                           |  Used to fetch live cryptocurrency prices from the CoinGecko API. |
+| **Update**     | **PUT / PATCH** | Updates an existing resource. **PUT** replaces the entire resource, while **PATCH** modifies only specific fields. |  Not Used                                                         |
+| **Delete**     | **DELETE**      | Removes an existing resource from the server permanently.                                                          |  Not Used                                                         |
 
 ### CRUD Usage in This Project
 
@@ -242,3 +242,6 @@ The **Cryptocurrency Price Tracker** is a **Read-only** application. It interact
 Since the application does not create, modify, or delete any server-side resources, the remaining CRUD operations (**POST, PUT/PATCH, and DELETE**) are not required.
 
 Although only the **Read** operation is implemented, understanding all four CRUD operations is essential for developing complete RESTful applications such as task management systems, inventory management software, blogging platforms, and full-stack web applications.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
