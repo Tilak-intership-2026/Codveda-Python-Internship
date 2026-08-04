@@ -1,11 +1,6 @@
 # Project: Simple Calculator
 # Developer: Tilak Kumar
 # Project Number: 1 (Level 1 Beginner)
-# Features:
-# - Separate Functions for every operation
-# - User Input: Two numbers and operation choice
-# - Error Handling: Specific check for division by zero
-# - Looping: Runs until user types '5' to exit
 
 def add(x, y):
     return x + y
@@ -21,11 +16,17 @@ def divide(x, y):
         return "Error! Division by zero is not allowed."
     return x / y
 
-def format_result(value):
-    """Formats result to remove unnecessary .0 from whole numbers"""
-    if isinstance(value, float) and value.is_integer():
-        return int(value)
-    return value
+def smart_format(value, original_input_str):
+    """
+    Checks if the original input had a decimal point.
+    If yes, returns float. If no, returns int (if whole number).
+    """
+    if '.' in original_input_str:
+        return f"{value:.2f}" # Shows 2 decimal places for floats
+    else:
+        if isinstance(value, float) and value.is_integer():
+            return int(value)
+        return value
 
 print("--- Codveda Level 1: Simple Calculator ---")
 
@@ -45,25 +46,28 @@ while True:
 
     if choice in ('1', '2', '3', '4'):
         try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            # We take input as string first to check for '.'
+            str_num1 = input("Enter first number: ")
+            str_num2 = input("Enter second number: ")
+            
+            num1 = float(str_num1)
+            num2 = float(str_num2)
 
             if choice == '1':
                 result = add(num1, num2)
-                print(f"Result: {num1} + {num2} = {format_result(result)}")
+                print(f"Result: {smart_format(num1, str_num1)} + {smart_format(num2, str_num2)} = {smart_format(result, str_num1)}")
             elif choice == '2':
                 result = subtract(num1, num2)
-                print(f"Result: {num1} - {num2} = {format_result(result)}")
+                print(f"Result: {smart_format(num1, str_num1)} - {smart_format(num2, str_num2)} = {smart_format(result, str_num1)}")
             elif choice == '3':
                 result = multiply(num1, num2)
-                print(f"Result: {num1} * {num2} = {format_result(result)}")
+                print(f"Result: {smart_format(num1, str_num1)} * {smart_format(num2, str_num2)} = {smart_format(result, str_num1)}")
             elif choice == '4':
                 result = divide(num1, num2)
-                # Check if result is a string (error message) or a number
                 if isinstance(result, str):
-                    print(f"Result: {num1} / {num2} = {result}")
+                    print(f"Result: {smart_format(num1, str_num1)} / {smart_format(num2, str_num2)} = {result}")
                 else:
-                    print(f"Result: {num1} / {num2} = {format_result(result)}")
+                    print(f"Result: {smart_format(num1, str_num1)} / {smart_format(num2, str_num2)} = {smart_format(result, str_num1)}")
 
         except ValueError:
             print("Invalid input! Please enter numeric values only.")
