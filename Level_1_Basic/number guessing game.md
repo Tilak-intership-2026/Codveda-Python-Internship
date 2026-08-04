@@ -7,3 +7,6 @@ Real-time Feedback: Guides the user with hints after every incorrect guess.
 Input Validation: Handles non-numeric inputs gracefully without crashing.
 Working Structure & Flow Chart
 The game logic revolves around a while loop that continues until the user guesses correctly or runs out of attempts.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
