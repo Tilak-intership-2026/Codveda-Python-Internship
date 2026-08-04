@@ -12,3 +12,6 @@ Understanding of Python Functions and parameters.
 Implementation of Conditional Statements (if-elif-else).
 Mastery of Exception Handling (try-except) for robust user input.
  #==============================================#
+ ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
