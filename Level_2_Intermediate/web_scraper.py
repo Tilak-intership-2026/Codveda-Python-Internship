@@ -11,14 +11,12 @@ def scrape_quotes():
     }
 
     try:
-        # 1. Fetch the web page content
+     
         response = requests.get(url, headers=headers)
         response.raise_for_status()
 
-        # 2. Parse the HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # 3. Extract specific data (Quotes and Authors)
         quotes = []
         quote_divs = soup.find_all('div', class_='quote')
 
@@ -31,7 +29,6 @@ def scrape_quotes():
             print(" No quotes found. The website structure might have changed.")
             return
 
-        # 4. Save data to CSV
         filename = "scraped_quotes.csv"
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['Quote', 'Author']
