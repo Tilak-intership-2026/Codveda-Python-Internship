@@ -11,7 +11,7 @@ def get_crypto_price(crypto_id='bitcoin'):
 
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx or 5xx)
+        response.raise_for_status()  
 
         data = response.json()
 
